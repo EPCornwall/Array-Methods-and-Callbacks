@@ -69,7 +69,7 @@ Parameters:
 
 function getWinnersByYear(win,yr) {
     let newArr=[];
-    for (let i=0; i<19; i++){
+    for (let i=0; i<yr(getFinals).length; i++){
         newArr.push(`In ${yr(getFinals)[i]}, ${win(getFinals)[i]} won the world cup! `);
     }
     console.log(newArr)
